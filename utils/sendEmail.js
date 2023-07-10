@@ -21,6 +21,7 @@ module.exports = async (email, subject, text) => {
 			subject: subject,
 			html: `<a href = ${text}>Click Here</a>`,
 		});
+		console.log("text",text);
 		console.log("email sent successfully");
 	} catch (error) {
 		console.log("email not sent!");
